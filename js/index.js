@@ -175,7 +175,9 @@ function comparePositiveAndNegative() {
 
   if (soDuong > soAm) {
     getElm("#txtPositiveAndNegative").innerHTML = `Số dương nhiều hơn số âm`;
-  }else{
+  }else if(soDuong == soAm){
+    getElm("#txtPositiveAndNegative").innerHTML = `Số dương bằng số âm`;
+  } else{
     getElm("#txtPositiveAndNegative").innerHTML = `Số âm nhiều hơn số dương`;
   }
 
